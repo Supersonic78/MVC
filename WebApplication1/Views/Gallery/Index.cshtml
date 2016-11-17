@@ -1,0 +1,49 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    var imagePath = Server.MapPath("~/Content/Images");
+    var files = Directory.GetFiles(imagePath);
+}
+
+<h2>Index</h2>
+
+
+
+Total images: @files.Count()
+
+@foreach (var file in files)
+{
+    <div style="padding:10px">
+     
+        <img src="~/Content/Images/@Path.GetFileName(file)" alt="Sample Image" />
+        
+    </div>
+}
+
+<div id="imageList">
+    <ul>
+        <li><a href='@Url.Action("MyAction", "MyController")'>
+    <img src='@Url.Content("~/Content/Images/9202_nature-1.jpg")' />
+</a></li>
+
+        <li>
+            <a href='@Url.Action("MyAction", "MyController")'>
+                <img src='@Url.Content("~/Content/Images/nature2-300x150.jpg")' />
+            </a>
+        </li>
+        <li>
+            <a href='@Url.Action("MyAction", "MyController")'>
+                <img src='@Url.Content("~/Content/Images/9202_nature-1.jpg")' />
+            </a>
+        </li>
+        <li>
+            <a href='@Url.Action("MyAction", "MyController")'>
+                <img src='@Url.Content("~/Content/Images/9202_nature-1.jpg")' />
+            </a>
+        </li>
+
+
+    </ul>
+</div>
+
+
