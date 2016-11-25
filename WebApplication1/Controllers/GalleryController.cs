@@ -36,10 +36,10 @@ namespace WebApplication1.Controllers
         }
 
         [HttpDelete]
-        public ActionResult Delete (int id)
-        {
-            return
-        }
+        //public ActionResult Delete (int id)
+        //{
+        //    return
+        //}
 
         //public ActionResult Create()
         //{
