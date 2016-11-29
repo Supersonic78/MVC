@@ -5,9 +5,9 @@ using System.Web;
 
 namespace WebApplication1.Models
 {
-    public class Comment
+    public class ViewAlbumPhoto
     {
-        public string CommentOnPhoto { get; set; }
-        public string CommentOnAlbum { get; set; }
+        public List<Photo> Photos { get; set; }
+        public List<Album> Albums { get; set; }
     }
 }

@@ -7,11 +7,11 @@ namespace WebApplication1.Models
 {
     public class Photo
     {
-        public Guid Id { get; set; }
-        public string Name { get; set; }
-        public string Url { get; set; }
-        public string Path { get; set; }
-        public long Size { get; set; }
-        public Comment comment { get; set; }
+      
+            public Guid PhotoID { get; set; }
+            public string PhotoName { get; set; }
+            public List<Comment> PhotoComment { get; set; }
+            public Guid AlbumID { get; set; }
+        
     }
 }

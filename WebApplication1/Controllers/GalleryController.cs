@@ -16,6 +16,7 @@ namespace WebApplication1.Controllers
           
             return View();
         }
+        [Authorize]
         public ActionResult Create()
         {
 
