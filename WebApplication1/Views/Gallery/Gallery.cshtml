@@ -30,18 +30,14 @@
             </div>
         </div>
 
-
-
-        @*<img src="/Image/@photo.PhotoName"/>*@
-        <div>
-            @*@Html.ActionLink("Show Picture", "ShowImage","Gallery",new { id=photo.PhotoID},null)*@
-        </div>
+   
     }
 </div>
 @section latest{
     <h3>Latest uploaded Picture</h3>
+    
 
-    foreach (Photo result in Model)
+    @foreach (Photo result in Model)
     {
         if (Model.IndexOf(result) == Model.Count - 1)
         {
