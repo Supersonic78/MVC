@@ -18,12 +18,10 @@ namespace WebApplication1.Controllers
         {
             if (!photos.Any())
             {
-
-                photos.Add(new Photo { PhotoID = Guid.NewGuid(), PhotoName = "Skimboard.jpg", PhotoComment = new List<Comment> { new Comment { CommentOnPicture = "Skimboarding on the ocean" } } });
-                photos.Add(new Photo { PhotoID = Guid.NewGuid(), PhotoName = "SkimboardThree.jpg", PhotoComment = new List<Comment> { new Comment { CommentOnPicture = "Skimboarding of three" } } });
-                photos.Add(new Photo { PhotoID = Guid.NewGuid(), PhotoName = "SunsetSurf.jpg", PhotoComment = new List<Comment> { new Comment { CommentOnPicture = "Surfing in the sunset" } } });
-                photos.Add(new Photo { PhotoID = Guid.NewGuid(), PhotoName = "surf.jpg", PhotoComment = new List<Comment> { new Comment { CommentOnPicture = "Surfing on the ocean" } } });
-                photos.Add(new Photo { PhotoID = Guid.NewGuid(), PhotoName = "Water.jpg", PhotoComment = new List<Comment> { new Comment { CommentOnPicture = "Fine ocean" } } });
+                photos.Add(new Photo { PhotoID = Guid.NewGuid(), PhotoName = "9202_nature-1.jpg", PhotoComment = new List<Comment> { new Comment { CommentOnPicture = "Nature is beautiful" } } });
+                photos.Add(new Photo { PhotoID = Guid.NewGuid(), PhotoName = "Beauty-of-nature-random-4884759-1280-800-1024x640-e1443406682619-300x150.jpg", PhotoComment = new List<Comment> { new Comment { CommentOnPicture = "Nature is beautiful" } } });
+                photos.Add(new Photo { PhotoID = Guid.NewGuid(), PhotoName = "nature-300x150.jpg", PhotoComment = new List<Comment> { new Comment { CommentOnPicture = "Nature is beautiful" } } });
+                photos.Add(new Photo { PhotoID = Guid.NewGuid(), PhotoName = "nature2-300x150.jpg", PhotoComment = new List<Comment> { new Comment { CommentOnPicture = "Nature is beautiful" } } });
             }
         }
         public ActionResult Gallery()
