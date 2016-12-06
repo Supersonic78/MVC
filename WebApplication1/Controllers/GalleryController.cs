@@ -68,7 +68,7 @@ namespace WebApplication1.Controllers
         {
 
             var p = photos.FirstOrDefault(x => x.PhotoID == id);
-            string fullPath = Request.MapPath("~/Image/" + p.PhotoName);
+            string fullPath = Request.MapPath("~/Content/Images/" + p.PhotoName);
 
             if (System.IO.File.Exists(fullPath))
             {

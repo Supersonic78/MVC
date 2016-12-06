@@ -37,11 +37,11 @@
     <h3>Latest uploaded Picture</h3>
     
 
-    foreach (Photo result in Model)
+    @foreach (WebApplication1.Models.Photo result in Model)
     {
         if (Model.IndexOf(result) == Model.Count - 1)
         {
-            // this is the last item
+             @*this is the last item*@
             <img src="/Content/Images/result.PhotoName" />
         }
     }
