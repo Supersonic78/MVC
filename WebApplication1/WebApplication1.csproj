@@ -198,12 +198,12 @@
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AlbumController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Controllers\GalleryController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\IndexController.cs" />
     <Compile Include="Models\Album.cs" />
-    <Compile Include="Models\LastUploadModel.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -291,16 +291,19 @@
     <Content Include="Views\Default\Index.cshtml" />
     <Content Include="Views\Gallery.cshtml" />
     <Content Include="Views\Gallery\GalleryLayout.cshtml" />
-    <Content Include="Views\Gallery\Create.cshtml" />
+    <Content Include="Views\Gallery\UploadPicture.cshtml" />
     <Content Include="Views\Gallery\Index.cshtml" />
-    <Content Include="Views\Gallery\_ViewStart.cshtml" />
-    <Content Include="Views\Gallery\Delete.cshtml" />
+    <Content Include="Views\Gallery\DeletePicture.cshtml" />
     <Content Include="Views\Home\LastUpload.cshtml" />
+    <Content Include="Views\ErrorPage\Error.cshtml" />
+    <Content Include="Views\Gallery\AddComment.cshtml" />
+    <Content Include="Views\Gallery\Gallery.cshtml" />
+    <Content Include="Views\Gallery\ShowImage.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Models\" />
-    <Folder Include="Views\Index\" />
+    <Folder Include="Views\Album\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

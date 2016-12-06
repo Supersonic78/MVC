@@ -7,7 +7,7 @@ namespace WebApplication1.Models
 {
     public class Comment
     {
-        public string CommentOnPhoto { get; set; }
+        public string CommentOnPicture { get; set; }
         public string CommentOnAlbum { get; set; }
     }
 }

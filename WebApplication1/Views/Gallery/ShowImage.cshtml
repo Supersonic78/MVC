@@ -1,0 +1,15 @@
+﻿@model WebApplication1.Models.Photo
+@{
+    ViewBag.Title = "ShowImage";
+}
+<h2>ShowImage</h2>
+<div class="row">
+    <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+            <img src="/Images/@Model.PhotoName" />
+            <div class="caption">
+                <h3>@Model.PhotoName</h3>
+            </div>
+        </div>
+    </div>
+</div>
